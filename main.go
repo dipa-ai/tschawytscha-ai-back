@@ -99,7 +99,7 @@ func (s *Server) chatHandler(w http.ResponseWriter, r *http.Request) {
 		},
 	}
 
-	// Преобразуем историю сообщений из фронтенда в формат OpenAI
+	// Convert the frontend message history to OpenAI format
 	if len(reqPayload.Messages) > 0 {
 		for _, msg := range reqPayload.Messages {
 			role := "user"
@@ -112,7 +112,7 @@ func (s *Server) chatHandler(w http.ResponseWriter, r *http.Request) {
 			})
 		}
 	} else {
-		// Если история пуста, используем только текущий вопрос
+		// If the history is empty, use only the current question
 		chatReq.Messages = append(chatReq.Messages, openai.ChatCompletionMessage{
 			Role:    "user",
 			Content: reqPayload.Question,
