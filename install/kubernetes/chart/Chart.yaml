@@ -1,0 +1,12 @@
+apiVersion: v2
+name: tshawytscha-ai-back
+description: Backend API for tshawytscha.ai AI platform
+type: application
+version: 0.1.0
+appVersion: "0.0.4"
+keywords:
+  - ai
+  - backend
+  - api
+maintainers:
+  - name: Alex
