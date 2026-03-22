@@ -16,7 +16,7 @@ go build -o server .
 OPENAI_API_KEY=... JWT_SECRET=... ./server
 
 # Docker build
-docker build -t tschawytscha-ai-back .
+docker build -t tshawytscha-ai-back .
 
 # Run tests (none exist yet)
 go test ./...

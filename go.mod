@@ -1,4 +1,4 @@
-module github.com/apten-fors/tschawytscha-ai-back
+module github.com/apten-fors/tshawytscha-ai-back
 
 go 1.25.8
 

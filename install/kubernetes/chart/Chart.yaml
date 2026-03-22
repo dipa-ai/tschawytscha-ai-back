@@ -1,5 +1,5 @@
 apiVersion: v2
-name: tschawytscha-ai-back
+name: tshawytscha-ai-back
 description: Backend API for tshawytscha.ai AI platform
 type: application
 version: 0.1.0

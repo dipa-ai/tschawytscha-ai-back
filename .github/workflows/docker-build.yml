@@ -32,7 +32,7 @@ jobs:
           context: "./"
           file: Dockerfile
           push: true
-          tags: ${{ vars.DOCKER_REGISTRY }}/59508-197526-76-infra/tschawytscha-ai-back:${{ github.ref_name }}
+          tags: ${{ vars.DOCKER_REGISTRY }}/59508-197526-76-infra/tshawytscha-ai-back:${{ github.ref_name }}
 
   helm-chart:
     runs-on: ubuntu-latest
@@ -63,4 +63,4 @@ jobs:
             --app-version "${CHART_VERSION}"
 
       - name: Push Helm chart to OCI registry
-        run: helm push tschawytscha-ai-back-${CHART_VERSION#v}.tgz oci://${{ vars.DOCKER_REGISTRY }}/59508-197526-76-infra/charts
+        run: helm push tshawytscha-ai-back-${CHART_VERSION#v}.tgz oci://${{ vars.DOCKER_REGISTRY }}/59508-197526-76-infra/charts

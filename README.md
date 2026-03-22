@@ -1,4 +1,4 @@
-# tschawytscha-ai-back
+# tshawytscha-ai-back
 
 Backend API for [tshawytscha.ai](https://tshawytscha.ai) — a chatbot powered by OpenAI's GPT-4o, manifesting as a chinook salmon that firmly denies being a fish.
 
@@ -66,8 +66,8 @@ Requires `auth_token` cookie.
 ## Docker
 
 ```bash
-docker build -t tschawytscha-ai-back .
-docker run -e OPENAI_API_KEY=your-key -e JWT_SECRET=your-secret -p 8080:8080 tschawytscha-ai-back
+docker build -t tshawytscha-ai-back .
+docker run -e OPENAI_API_KEY=your-key -e JWT_SECRET=your-secret -p 8080:8080 tshawytscha-ai-back
 ```
 
 ## Deployment
@@ -76,7 +76,7 @@ The project uses GitHub Actions to build and push Docker images and Helm charts 
 
 ```bash
 # Deploy with Helm
-helm install tschawytscha-ai-back install/kubernetes/chart/ \
+helm install tshawytscha-ai-back install/kubernetes/chart/ \
   --set image.tag=v0.0.5
 ```
 

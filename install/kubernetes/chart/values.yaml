@@ -1,11 +1,11 @@
-# Backend values for tschawytscha-ai
+# Backend values for tshawytscha-ai
 
-name: tschawytscha-ai-back
+name: tshawytscha-ai-back
 
 replicaCount: 1
 
 image:
-  repository: registry.luxembourg-2.cloud.gcore.dev/59508-197526-76-infra/tschawytscha-ai-back
+  repository: registry.luxembourg-2.cloud.gcore.dev/59508-197526-76-infra/tshawytscha-ai-back
   tag: "v0.0.5"
   pullPolicy: IfNotPresent
 
