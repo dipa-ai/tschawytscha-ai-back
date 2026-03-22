@@ -1,6 +1,6 @@
 module github.com/apten-fors/tschawytscha-ai-back
 
-go 1.21.13
+go 1.25.8
 
 require (
 	github.com/golang-jwt/jwt/v5 v5.2.1
