@@ -1,6 +1,6 @@
-# Backend values for tshawytscha-ai
+# Backend values for tschawytscha-ai
 
-name: tshawytscha-ai-back
+name: tschawytscha-ai-back
 
 replicaCount: 1
 
